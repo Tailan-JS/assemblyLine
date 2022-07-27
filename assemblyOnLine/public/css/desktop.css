@@ -1,0 +1,38 @@
+
+.guest-back{
+    background-image: linear-gradient(rgb(46, 65, 245),rgb(159, 168, 252));
+    margin-top: -15px;
+    min-height: 101vh;
+    display: flex;
+    align-items: center;
+
+}
+.dataCard{
+    background-color: rgb(13, 18, 83);
+    padding: 30px 45px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: 5px 5px 5px black;
+    max-width: 650px;
+}
+.dataCard .logo{
+    display: flex;
+    justify-content: center;
+}
+.dataCard p{
+    font-size: 3.5em;
+    margin: 0px;
+    line-height: 48px;
+    width: 38%;
+    text-align: right;
+}
+.input-field label {
+    color: rgb(255, 255, 255);
+  }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+    color: rgb(255, 255, 255);
+  }
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 1px 0 0 rgb(255, 255, 255);
+  }
