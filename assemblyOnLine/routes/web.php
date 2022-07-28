@@ -12,13 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.nlogin');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('ndashboard');
 })->middleware(['auth'])->name('dashboard');
+Route::get('/team',[TaskController::class,'team'])->middleware(['auth'])->name('team');
 
 require __DIR__.'/auth.php';

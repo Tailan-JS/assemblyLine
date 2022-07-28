@@ -1,4 +1,8 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* guest syles */
 .guest-back{
     background-image: linear-gradient(rgb(46, 65, 245),rgb(159, 168, 252));
     margin-top: -15px;
@@ -12,7 +16,7 @@
     padding: 30px 45px;
     border-radius: 25px 0px 25px 0px;
     box-shadow: 5px 5px 5px black;
-    max-width: 650px;
+    max-width: 600px;
 }
 .dataCard .logo{
     display: flex;
@@ -36,3 +40,62 @@
     border-bottom: 1px solid rgb(255, 255, 255);
     box-shadow: 0 1px 0 0 rgb(255, 255, 255);
   }
+  #loginButton{
+    margin: 35px 0px 0px 0px;
+    border-radius: 20px;
+    font-size:1.2em;
+    padding: 5px 0px 40px 0px;
+  }
+
+  /* logged styles */
+#topo{
+    display: flex;
+    justify-content: space-between;
+}
+#topo .logo{
+    padding: 1px;
+    cursor: pointer;
+}
+.logo h2{
+    font-size: 2em;
+    margin: 0px 10px;
+    text-align: right;
+}
+#topo ul{
+    display: flex;
+}
+#topo ul li{
+    padding: 10px;
+    margin: 10PX;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3em;   
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+.card #task{
+    display:flex; 
+    padding:30px;
+    align-items:center;
+    justify-content:space-between;
+  }
+#task>p{
+    padding: 0px 10px;
+}
+#tasks>p {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(151, 151, 151);
+}
+footer ul li{
+    display:flex;
+    align-content:center;
+    line-height:25px;
+}
