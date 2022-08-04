@@ -14,7 +14,7 @@
                 <!-- Done Modal Structure -->
                 <div id="modal{{$i}}" class="modal">
                     <div class="modal-content">
-                        <h4 class="center green-text text-darken-2">Deseja confirmar que a Tarefa foi executada??</h4>
+                        <h4 class="center green-text text-darken-2" style="font-weight:600;" >Deseja confirmar que a Tarefa foi executada??</h4>
                         <div class=" center" >
                        <button class="btn green modal-close">confirmar</button>
                        <button class="btn red modal-close">cancelar</button>
@@ -25,7 +25,7 @@
                 <!-- Reject Modal Structure -->
                     <div id="delete{{$i}}" class="modal">
                     <div class="modal-content">
-                        <h4 class="center red-text text-darken-2">Deseja realmente excluir esta tarefa sem executá-la??</h4>
+                        <h4 class="center red-text text-darken-2" style="font-weight:600;">Deseja realmente excluir esta tarefa sem executá-la??</h4>
                         <div class=" center" >
                        <button class="btn green modal-close">confirmar</button>
                        <button class="btn red modal-close">cancelar</button>

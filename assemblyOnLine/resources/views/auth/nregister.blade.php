@@ -19,11 +19,6 @@
                 <label for="name" :value="__('Name')"  >Name</label>
                 <input type="text" name="name" id="name" :value="old('name')" class="white-text" required>
             </div>
-            <!-- CPF -->
-            <div class="input-field">
-            <label for="cpf" :value="__('Cpf')">CPF</label>
-            <input id="cpf" type="text" name="cpf" :value="old('cpf')" class="white-text" required >
-            </div>
             <!--email -->
             <div class="input-field">
                 <label for="email" :value="__('Email')">Email</label>

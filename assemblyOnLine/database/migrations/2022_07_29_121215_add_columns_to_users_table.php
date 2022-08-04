@@ -14,9 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('cpf');
-            $table->string('userCode');
-            $table->foreignId('boss_id')->constrained();
+            $table->json('team')->default('[]');
         });
     }
 
@@ -28,8 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['cpf','boss_id']);
-            $table->dropColumn('userCode');
+            $table->dropColumn('team');
         });
     }
 };
